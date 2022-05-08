@@ -46,3 +46,27 @@ class NestedIterator:
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []
 # while i.hasNext(): v.append(i.next())
+
+
+from collections import Generator
+
+
+class NestedIterator2:
+    def __init__(self, nestedList: List[NestedInteger]):
+        self.generator = self._get(nestedList)
+        self.next_number = next(self.generator, None)
+
+    def _get(self, current_list: List[NestedInteger]) -> Generator[int, None, None]:
+        for element in current_list:
+            if element.isInteger():
+                yield element.getInteger()
+            else:
+                yield from self._get(element.getList())
+
+    def next(self) -> int:
+        result = self.next_number
+        self.next_number = next(self.generator, None)
+        return result
+
+    def hasNext(self) -> bool:
+        return self.next_number is not None
