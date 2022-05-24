@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/ones-and-zeroes/
+from functools import lru_cache
 from typing import List
 
 
@@ -15,8 +16,24 @@ class Solution:
         return dp[-1][-1]
 
 
-if __name__ == '__main__':
-    s = Solution()
+class Solution2:
+    def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
+        counter = [[s.count("0"), s.count("1")] for s in strs]
 
-    assert s.findMaxForm(['10', '0001', '111001', '1', '0'], 5, 3) == 4
-    assert s.findMaxForm(['10', '0', '1'], 1, 1) == 2
+        @lru_cache
+        def dp(i, j, idx):
+            if i < 0 or j < 0:
+                return float('-inf')
+
+            if idx == len(strs):
+                return 0
+
+            return max(dp(i, j, idx + 1), 1 + dp(i - counter[idx][0], j - counter[idx][1], idx + 1))
+
+        return dp(m, n, 0)
+
+
+if __name__ == '__main__':
+    for s in (Solution(), Solution2()):
+        assert s.findMaxForm(['10', '0001', '111001', '1', '0'], 5, 3) == 4
+        assert s.findMaxForm(['10', '0', '1'], 1, 1) == 2
