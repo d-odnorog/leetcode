@@ -18,11 +18,15 @@ class Solution:
 
         # Filling the values for the first column
         for i in range(1, m):
-            obstacleGrid[i][0] = int(obstacleGrid[i][0] == 0 and obstacleGrid[i-1][0] == 1)
+            obstacleGrid[i][0] = int(
+                obstacleGrid[i][0] == 0 and obstacleGrid[i - 1][0] == 1
+            )
 
         # Filling the values for the first row
         for j in range(1, n):
-            obstacleGrid[0][j] = int(obstacleGrid[0][j] == 0 and obstacleGrid[0][j-1] == 1)
+            obstacleGrid[0][j] = int(
+                obstacleGrid[0][j] == 0 and obstacleGrid[0][j - 1] == 1
+            )
 
         # Starting from cell(1,1) fill up the values
         # No. of ways of reaching cell[i][j] = cell[i - 1][j] + cell[i][j - 1]
@@ -30,12 +34,12 @@ class Solution:
         for i in range(1, m):
             for j in range(1, n):
                 if obstacleGrid[i][j] == 0:
-                    obstacleGrid[i][j] = obstacleGrid[i-1][j] + obstacleGrid[i][j-1]
+                    obstacleGrid[i][j] = obstacleGrid[i - 1][j] + obstacleGrid[i][j - 1]
                 else:
                     obstacleGrid[i][j] = 0
 
         # Return value stored in rightmost bottommost cell. That is the destination.
-        return obstacleGrid[m-1][n-1]
+        return obstacleGrid[m - 1][n - 1]
 
 
 class Solution2:

@@ -9,13 +9,14 @@ class TreeNode:
 
 
 class Solution:
-    def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
+    def getTargetCopy(
+        self, original: TreeNode, cloned: TreeNode, target: TreeNode
+    ) -> TreeNode:
         if original is None:
             return
         elif original == target:
             return cloned
         else:
-            return (
-                self.getTargetCopy(original.left, cloned.left, target)
-                or self.getTargetCopy(original.right, cloned.right, target)
-            )
+            return self.getTargetCopy(
+                original.left, cloned.left, target
+            ) or self.getTargetCopy(original.right, cloned.right, target)

@@ -4,8 +4,8 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         string = str(x)
-        for i in range(int(len(string)/2)):
-            if string[i] != string[-i-1]:
+        for i in range(int(len(string) / 2)):
+            if string[i] != string[-i - 1]:
                 return False
 
         return True

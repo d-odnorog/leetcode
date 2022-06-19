@@ -20,7 +20,7 @@ class Solution2:
         result = []
         for i in range(len(nums)):
             element = nums[i]
-            remaining_list = nums[:i] + nums[i + 1:]
+            remaining_list = nums[:i] + nums[i + 1 :]
             for p in self.permutation(remaining_list):
                 if [element] + p not in result:
                     result.append([element] + p)
@@ -35,5 +35,10 @@ if __name__ == '__main__':
     for s in (Solution(), Solution2()):
         assert s.permuteUnique([1, 1, 2]) == [[1, 1, 2], [1, 2, 1], [2, 1, 1]]
         assert s.permuteUnique([1, 2, 3]) == [
-            [1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]
+            [1, 2, 3],
+            [1, 3, 2],
+            [2, 1, 3],
+            [2, 3, 1],
+            [3, 1, 2],
+            [3, 2, 1],
         ]

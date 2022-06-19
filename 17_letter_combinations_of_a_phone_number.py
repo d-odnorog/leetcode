@@ -32,6 +32,16 @@ class Solution:
 if __name__ == '__main__':
     s = Solution()
 
-    assert s.letterCombinations('23') == ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']
+    assert s.letterCombinations('23') == [
+        'ad',
+        'ae',
+        'af',
+        'bd',
+        'be',
+        'bf',
+        'cd',
+        'ce',
+        'cf',
+    ]
     assert s.letterCombinations('') == []
     assert s.letterCombinations('2') == ['a', 'b', 'c']

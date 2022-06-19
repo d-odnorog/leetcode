@@ -28,7 +28,10 @@ class Solution2:
             if idx == len(strs):
                 return 0
 
-            return max(dp(i, j, idx + 1), 1 + dp(i - counter[idx][0], j - counter[idx][1], idx + 1))
+            return max(
+                dp(i, j, idx + 1),
+                1 + dp(i - counter[idx][0], j - counter[idx][1], idx + 1),
+            )
 
         return dp(m, n, 0)
 

@@ -23,10 +23,10 @@ class Solution:
                 new_col = y + y_offset
 
                 if (
-                        0 <= new_row < N
-                        and 0 <= new_col < N
-                        and not grid[new_row][new_col]
-                        and (new_row, new_col) not in visited
+                    0 <= new_row < N
+                    and 0 <= new_col < N
+                    and not grid[new_row][new_col]
+                    and (new_row, new_col) not in visited
                 ):
                     yield new_row, new_col
 

@@ -28,12 +28,10 @@ class Solution:
         return cnt
 
     def countSubstrings(self, s: str) -> int:
-        return (
-            sum(
-                self.expandAndCountPallindromes(i, i, s)
-                + self.expandAndCountPallindromes(i, i + 1, s)
-                for i in range(len(s))
-            )
+        return sum(
+            self.expandAndCountPallindromes(i, i, s)
+            + self.expandAndCountPallindromes(i, i + 1, s)
+            for i in range(len(s))
         )
 
 

@@ -40,7 +40,11 @@ class Solution:
                 _sum = r + c
 
                 # If the current square doesn't have another queen in same column and diagonal.
-                if not (c in visited_cols or diff in visited_diagonals or _sum in visited_antidiagonals):
+                if not (
+                    c in visited_cols
+                    or diff in visited_diagonals
+                    or _sum in visited_antidiagonals
+                ):
                     visited_cols.add(c)
                     visited_diagonals.add(diff)
                     visited_antidiagonals.add(_sum)
@@ -60,5 +64,8 @@ class Solution:
 if __name__ == '__main__':
     s = Solution()
 
-    assert s.solveNQueens(4) == [['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]
+    assert s.solveNQueens(4) == [
+        ['.Q..', '...Q', 'Q...', '..Q.'],
+        ['..Q.', 'Q...', '...Q', '.Q..'],
+    ]
     assert s.solveNQueens(1) == [['Q']]

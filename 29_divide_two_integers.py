@@ -36,11 +36,11 @@ class Solution:
         dividend_str = str(dividend)
         divisor_str = str(divisor)
         number_of_zeros = len(dividend_str) - len(divisor_str)
-        if int(dividend_str[0:len(divisor_str)]) < divisor:
+        if int(dividend_str[0 : len(divisor_str)]) < divisor:
             number_of_zeros -= 1
         return (
             int(divisor_str + '0' * number_of_zeros),
-            int('1' + '0' * number_of_zeros)
+            int('1' + '0' * number_of_zeros),
         )
 
 

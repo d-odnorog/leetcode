@@ -18,7 +18,11 @@ class Solution:
                 neighbor_x = delta_x + pos[0]
                 neighbor_y = delta_y + pos[1]
 
-                if 0 <= neighbor_x < ROWS and 0 <= neighbor_y < COLS and matrix[neighbor_x][neighbor_y] > val:
+                if (
+                    0 <= neighbor_x < ROWS
+                    and 0 <= neighbor_y < COLS
+                    and matrix[neighbor_x][neighbor_y] > val
+                ):
                     longest = max(longest, 1 + dfs((neighbor_x, neighbor_y)))
 
             longest_by_pos[pos] = longest

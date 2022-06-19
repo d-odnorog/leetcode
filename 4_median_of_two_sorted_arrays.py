@@ -20,14 +20,14 @@ class Solution:
         # handle case 1 and 2 (see explanation above)
         if a[p - 1] >= b[q - 1]:
             if i <= p + q - 2:
-                return self._find_i(a[:p - 1], b, i)
+                return self._find_i(a[: p - 1], b, i)
             else:
                 return self._find_i(a, b[q:], i - q)
 
         # handle case 3 and 4 (see explanation above)
         else:
             if i <= p + q - 2:
-                return self._find_i(a, b[:q - 1], i)
+                return self._find_i(a, b[: q - 1], i)
             else:
                 return self._find_i(a[p:], b, i - p)
 
@@ -39,11 +39,9 @@ class Solution:
             return self._find_i(nums1, nums2, (l1 + l2) // 2)
         else:
             return (
-                (
-                    self._find_i(nums1, nums2, (l1 + l2) // 2 - 1)
-                    + self._find_i(nums1, nums2, (l1 + l2) // 2)
-                ) / 2
-            )
+                self._find_i(nums1, nums2, (l1 + l2) // 2 - 1)
+                + self._find_i(nums1, nums2, (l1 + l2) // 2)
+            ) / 2
 
 
 if __name__ == '__main__':

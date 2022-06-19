@@ -3,7 +3,6 @@ from typing import List
 
 
 class WordFilter:
-
     def __init__(self, words: List[str]):
         self.trie = {}
         self.weight_marker = '$'

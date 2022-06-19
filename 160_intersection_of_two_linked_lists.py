@@ -9,7 +9,9 @@ class ListNode:
 
 
 class Solution:
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+    def getIntersectionNode(
+        self, headA: ListNode, headB: ListNode
+    ) -> Optional[ListNode]:
         first_set = set()
 
         current_node = headA
@@ -27,7 +29,9 @@ class Solution:
 
 
 class Solution2:
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+    def getIntersectionNode(
+        self, headA: ListNode, headB: ListNode
+    ) -> Optional[ListNode]:
         one = headA
         two = headB
 

@@ -15,6 +15,7 @@ class Solution:
                 if word1[i] == word2[j]
                 else max(lcs(i + 1, j), lcs(i, j + 1))
             )
+
         # subtract the lcs length from both the strings
         # the difference is the number of characters that has to deleted
         return m + n - 2 * lcs(0, 0)

@@ -21,7 +21,7 @@ class Solution:
             return 0
 
         for i in range(length - 2, -1, -1):
-            if nums[i] > nums[i+1]:
+            if nums[i] > nums[i + 1]:
                 ma = max(ma, nums[i])
 
         left = 0

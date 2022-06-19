@@ -10,7 +10,7 @@ class Solution:
         length = len(nums)
         nums_copy = nums.copy()
         for i in range(length):
-            nums[i] = nums_copy[(i-k) % length]
+            nums[i] = nums_copy[(i - k) % length]
 
         # return nums
 
