@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/power-of-four/
-from math import sqrt, log
+from math import log, sqrt
 
 
 class Solution:
