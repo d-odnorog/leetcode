@@ -21,10 +21,10 @@ class Solution:
 
 class Solution2:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        l = []
+        lst = []
 
         while head:
-            l.append(head.val)
+            lst.append(head.val)
             head = head.next
 
-        return l == l[::-1]
+        return lst == lst[::-1]
