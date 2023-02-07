@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "leetcode"
+version = "0.1.0"
+description = ""
+authors = ["Dmitrii Odnorog <dm.odnorog@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+black = "^23.1.0"
+isort = "^5.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
