@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/move-zeroes/
-from typing import List
 
 
 class Solution:
-    def moveZeroes(self, nums: List[int]) -> None:
+    def moveZeroes(self, nums: list[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
@@ -16,7 +15,7 @@ class Solution:
 
 
 class Solution2:
-    def moveZeroes(self, nums: List[int]) -> None:
+    def moveZeroes(self, nums: list[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """

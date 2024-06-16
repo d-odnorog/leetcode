@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/find-original-array-from-doubled-array/
 from collections import Counter
-from typing import List
 
 
 class Solution:
-    def findOriginalArray(self, nums: List[int]) -> List[int]:
+    def findOriginalArray(self, nums: list[int]) -> list[int]:
         answer = []
         vacant = []
 

@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/trapping-rain-water/
-from typing import List
 
 
 class Solution:
@@ -9,7 +8,7 @@ class Solution:
     # pointer i from the left
     # pointer j from the right
 
-    def trap(self, height: List[int]) -> int:
+    def trap(self, height: list[int]) -> int:
         i, j, ans, ma, mi = 0, len(height) - 1, 0, 0, 0
 
         while i <= j:

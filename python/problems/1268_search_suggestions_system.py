@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/search-suggestions-system/
-from typing import List
 
 
 class Solution:
     def suggestedProducts(
-        self, products: List[str], searchWord: str
-    ) -> List[List[str]]:
+        self, products: list[str], searchWord: str
+    ) -> list[list[str]]:
         product = []
         for i in range(len(searchWord)):
             p = []

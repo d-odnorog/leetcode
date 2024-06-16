@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
-from typing import List
 
 
 class Solution:
-    def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
+    def longestIncreasingPath(self, matrix: list[list[int]]) -> int:
         longest_by_pos = {}
         deltas = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         ROWS, COLS = len(matrix), len(matrix[0])

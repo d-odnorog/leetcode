@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/binary-tree-cameras/
-from typing import Optional
 
 
 class TreeNode:
@@ -10,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def minCameraCover(self, root: Optional[TreeNode]) -> int:
+    def minCameraCover(self, root: TreeNode | None) -> int:
         def solve(node):
             # 0: Strict ST; All nodes below this are covered, but not this one
             # 1: Normal ST; All nodes below and incl this are covered - no camera

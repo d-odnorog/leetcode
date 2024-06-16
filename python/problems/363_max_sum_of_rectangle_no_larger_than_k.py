@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
 from bisect import bisect_left, insort
-from typing import List
 
 
 class Solution:
-    def maxSumSubmatrix(self, matrix: List[List[int]], k: int) -> int:
+    def maxSumSubmatrix(self, matrix: list[list[int]], k: int) -> int:
         m, n = len(matrix), len(matrix[0])
         res = -float('inf')
 

@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/shortest-path-in-binary-matrix/
 from collections import deque
-from typing import List
 
 
 class Solution:
-    def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
+    def shortestPathBinaryMatrix(self, grid: list[list[int]]) -> int:
         if grid[0][0] != 0 or grid[-1][-1] != 0:
             return -1
 

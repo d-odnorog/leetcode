@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/wiggle-subsequence/
-from typing import List
 
 
 class Solution:
-    def wiggleMaxLength(self, nums: List[int]) -> int:
+    def wiggleMaxLength(self, nums: list[int]) -> int:
         f = 1
         d = 1
         for i in range(1, len(nums)):

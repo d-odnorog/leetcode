@@ -1,15 +1,14 @@
 # https://leetcode.com/problems/squares-of-a-sorted-array/
-from typing import List
 
 
 class Solution:
-    def sortedSquares(self, nums: List[int]) -> List[int]:
+    def sortedSquares(self, nums: list[int]) -> list[int]:
         nums = map(lambda x: x**2, nums)
         return sorted(nums)
 
 
 class Solution2:
-    def sortedSquares(self, nums: List[int]) -> List[int]:
+    def sortedSquares(self, nums: list[int]) -> list[int]:
         pointer_1 = 0
         pointer_2 = len(nums) - 1
         results = []

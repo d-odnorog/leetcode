@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/sort-array-by-parity/
-from typing import List
 
 
 class Solution:
-    def sortArrayByParity(self, nums: List[int]) -> List[int]:
+    def sortArrayByParity(self, nums: list[int]) -> list[int]:
         even_numbers, odd_numbers = [], []
 
         for n in nums:
@@ -16,7 +15,7 @@ class Solution:
 
 
 class Solution2(object):
-    def sortArrayByParity(self, nums: List[int]) -> List[int]:
+    def sortArrayByParity(self, nums: list[int]) -> list[int]:
         nums.sort(key=lambda x: x % 2)
         return nums
 

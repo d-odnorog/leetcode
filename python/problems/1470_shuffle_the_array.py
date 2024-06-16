@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/shuffle-the-array/
-from typing import List
 
 
 class Solution:
-    def shuffle(self, nums: List[int], n: int) -> List[int]:
+    def shuffle(self, nums: list[int], n: int) -> list[int]:
         result = []
         for i in range(n):
             result.append(nums[i])
@@ -13,7 +12,7 @@ class Solution:
 
 
 class Solution2:
-    def shuffle(self, nums: List[int], n: int) -> List[int]:
+    def shuffle(self, nums: list[int], n: int) -> list[int]:
         res = []
         for i, j in zip(nums[:n], nums[n:]):
             res += [i, j]

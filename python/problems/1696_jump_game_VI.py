@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/jump-game-vi/
 from collections import deque
-from typing import List
 
 
 class Solution:
-    def maxResult(self, nums: List[int], k: int) -> int:
+    def maxResult(self, nums: list[int], k: int) -> int:
         dp = deque([(nums[0], 0)])
 
         for i in range(1, len(nums)):

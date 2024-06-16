@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-from typing import List, Optional
 
 
 class TreeNode:
@@ -10,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
+    def sortedArrayToBST(self, nums: list[int]) -> TreeNode | None:
         total_nums = len(nums)
         if not total_nums:
             return None

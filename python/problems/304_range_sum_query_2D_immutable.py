@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/range-sum-query-2d-immutable/
-from typing import List
 
 
 class NumMatrix:
-    def __init__(self, matrix: List[List[int]]):
+    def __init__(self, matrix: list[list[int]]):
         self.dp = [[0] * (len(matrix[0]) + 1) for _ in range(len(matrix) + 1)]
 
         # calculate prefix sum

@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/non-decreasing-array/
-from typing import List
 
 
 class Solution:
-    def checkPossibility(self, nums: List[int]) -> bool:
+    def checkPossibility(self, nums: list[int]) -> bool:
         is_non_decreasing = False
         for i in range(1, len(nums)):
             if nums[i] < nums[i - 1]:

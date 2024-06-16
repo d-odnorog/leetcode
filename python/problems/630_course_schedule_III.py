@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/course-schedule-iii/
 import heapq
-from typing import List
 
 
 class Solution:
-    def scheduleCourse(self, courses: List[List[int]]) -> int:
+    def scheduleCourse(self, courses: list[list[int]]) -> int:
         # First, sorting according to the lastday.
         courses.sort(key=lambda x: x[1])
         totalDays = 0

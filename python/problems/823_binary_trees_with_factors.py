@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/binary-trees-with-factors/
-from typing import List
 
 
 class Solution:
-    def numFactoredBinaryTrees(self, arr: List[int]) -> int:
+    def numFactoredBinaryTrees(self, arr: list[int]) -> int:
         arr.sort()
         MOD = 10**9 + 7
 

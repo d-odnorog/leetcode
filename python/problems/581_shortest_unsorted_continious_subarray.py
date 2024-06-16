@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
-from typing import List
 
 
 class Solution:
-    def findUnsortedSubarray(self, nums: List[int]) -> int:
+    def findUnsortedSubarray(self, nums: list[int]) -> int:
         ma = -10001
         mi = 10001
         length = len(nums)
@@ -40,7 +39,7 @@ class Solution:
 
 
 class Solution2:
-    def findUnsortedSubarray(self, nums: List[int]) -> int:
+    def findUnsortedSubarray(self, nums: list[int]) -> int:
         if len(nums) < 2:
             return 0
 

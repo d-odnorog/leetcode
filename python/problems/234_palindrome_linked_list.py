@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/palindrome-linked-list/
-from typing import Optional
 
 
 class ListNode:
@@ -9,7 +8,7 @@ class ListNode:
 
 
 class Solution:
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+    def isPalindrome(self, head: ListNode | None) -> bool:
         s = ''
 
         while head:
@@ -20,7 +19,7 @@ class Solution:
 
 
 class Solution2:
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+    def isPalindrome(self, head: ListNode | None) -> bool:
         lst = []
 
         while head:

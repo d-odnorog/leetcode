@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/find-and-replace-pattern/
 from collections import defaultdict
-from typing import List
 
 
 class Solution:
@@ -19,7 +18,7 @@ class Solution:
                 l.append(m[c])
         return l
 
-    def findAndReplacePattern(self, words: List[str], pattern: str) -> List[str]:
+    def findAndReplacePattern(self, words: list[str], pattern: str) -> list[str]:
         ans = []
 
         pfind = self.find(pattern)

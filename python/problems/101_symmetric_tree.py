@@ -22,4 +22,6 @@ class Solution:
         elif left_root.val != right_root.val:
             return False
 
-        return self.isSame(left_root.left, right_root.right) and self.isSame(left_root.right, right_root.left)
+        return self.isSame(left_root.left, right_root.right) and self.isSame(
+            left_root.right, right_root.left
+        )

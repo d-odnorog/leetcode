@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-from typing import List
 
 
 class Solution:
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
+    def searchRange(self, nums: list[int], target: int) -> list[int]:
         left_target_index = self.binary_search(
             nums, target, 0, len(nums) - 1, lambda mid_value: mid_value >= target
         )
@@ -18,7 +17,7 @@ class Solution:
         return [left_target_index, right_target_index]
 
     def binary_search(
-        self, nums: List[int], target: int, left: int, right: int, predicate
+        self, nums: list[int], target: int, left: int, right: int, predicate
     ):
         best_index_match = -1
 

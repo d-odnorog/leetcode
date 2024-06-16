@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/longest-string-chain/
-from typing import List
 
 
 class Solution:
-    def longestStrChain(self, words: List[str]) -> int:
+    def longestStrChain(self, words: list[str]) -> int:
         dp = {}
         result = 1
         for word in sorted(words, key=len):

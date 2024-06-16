@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/ones-and-zeroes/
 from functools import lru_cache
-from typing import List
 
 
 class Solution:
-    def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
+    def findMaxForm(self, strs: list[str], m: int, n: int) -> int:
         dp = [[0] * (n + 1) for _ in range(m + 1)]
         counter = [[s.count("0"), s.count("1")] for s in strs]
 
@@ -17,7 +16,7 @@ class Solution:
 
 
 class Solution2:
-    def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
+    def findMaxForm(self, strs: list[str], m: int, n: int) -> int:
         counter = [[s.count("0"), s.count("1")] for s in strs]
 
         @lru_cache

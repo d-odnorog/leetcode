@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/network-delay-time/
 import heapq
 from collections import defaultdict
-from typing import List
 
 
 class Solution:
-    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+    def networkDelayTime(self, times: list[list[int]], n: int, k: int) -> int:
         adj_list = defaultdict(list)
 
         for x, y, w in times:

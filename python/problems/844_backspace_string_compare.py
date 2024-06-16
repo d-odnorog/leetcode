@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/backspace-string-compare/
-from typing import List
 
 
 class Solution:
@@ -23,7 +22,7 @@ class Solution:
 
 class Solution2:
     def backspaceCompare(self, s: str, t: str) -> bool:
-        def build(string: str) -> List[str]:
+        def build(string: str) -> list[str]:
             result = []
             for letter in string:
                 if letter != '#':

@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/number-of-matching-subsequences/
-from typing import List
 
 
 class Solution:
-    def numMatchingSubseq(self, s: str, words: List[str]) -> int:
+    def numMatchingSubseq(self, s: str, words: list[str]) -> int:
         def is_subsequence(s1, s2):
 
             i = j = 0

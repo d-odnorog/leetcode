@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
-from typing import List
 
 
 class Solution:
-    def maxScore(self, cardPoints: List[int], k: int) -> int:
+    def maxScore(self, cardPoints: list[int], k: int) -> int:
         n = len(cardPoints)
         total = sum(cardPoints)
 

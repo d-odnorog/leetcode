@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/queue-reconstruction-by-height/
-from typing import List
 
 
 class Solution:
-    def reconstructQueue(self, people: List[List[int]]) -> List[List[int]]:
+    def reconstructQueue(self, people: list[list[int]]) -> list[list[int]]:
         output = []
 
         # sort the array in decreasing order of height

@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/pacific-atlantic-water-flow/
-from typing import List, Set, Tuple
 
 
 class Solution:
-    def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
+    def pacificAtlantic(self, heights: list[list[int]]) -> list[list[int]]:
         def pac(i, j):
             if rp[i][j]:
                 return True
@@ -73,10 +72,10 @@ class Solution:
 
 
 class Solution2:
-    def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
+    def pacificAtlantic(self, heights: list[list[int]]) -> list[list[int]]:
         m, n = len(heights), len(heights[0])
 
-        def dfs(i: int, j: int, prev_height: int, coords: Set[Tuple[int]]) -> None:
+        def dfs(i: int, j: int, prev_height: int, coords: set[tuple[int]]) -> None:
             if i < 0 or i == m or j < 0 or j == n:
                 # out of bounds
                 return

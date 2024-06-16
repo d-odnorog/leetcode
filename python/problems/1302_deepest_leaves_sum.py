@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/deepest-leaves-sum/
-from typing import Optional
 
 
 class TreeNode:
@@ -10,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def deepestLeavesSum(self, root: Optional[TreeNode]) -> int:
+    def deepestLeavesSum(self, root: TreeNode | None) -> int:
         queue = [root]
         while queue:
             last_sum, new_queue = 0, []

@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/sort-the-matrix-diagonally/
 from collections import defaultdict
-from typing import List
 
 
 class Solution:
-    def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:
+    def diagonalSort(self, mat: list[list[int]]) -> list[list[int]]:
         m, n = len(mat), len(mat[0])
 
         d = defaultdict(list)

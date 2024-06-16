@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/transpose-matrix/
-from typing import List
 
 
 class Solution:
-    def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
+    def transpose(self, matrix: list[list[int]]) -> list[list[int]]:
         result = []
         for i in range(len(matrix[0])):
             col = []

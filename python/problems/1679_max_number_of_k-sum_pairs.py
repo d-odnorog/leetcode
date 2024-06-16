@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/max-number-of-k-sum-pairs/
-from typing import List
 
 
 class Solution:
-    def maxOperations(self, nums: List[int], k: int) -> int:
+    def maxOperations(self, nums: list[int], k: int) -> int:
         table = {}  # {number: amount}
         operations = 0
         for i in nums:

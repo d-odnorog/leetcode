@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/palindrome-pairs/
-from typing import List, Tuple
 
 
 class Solution:
-    def palindromePairs(self, words: List[str]) -> List[Tuple[int, int]]:
+    def palindromePairs(self, words: list[str]) -> list[tuple[int, int]]:
         # keep a hashmap of word to its index
         idx_map = {}
         for i, word in enumerate(words):

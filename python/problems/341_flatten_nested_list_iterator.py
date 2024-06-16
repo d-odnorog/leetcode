@@ -52,11 +52,11 @@ from collections import Generator
 
 
 class NestedIterator2:
-    def __init__(self, nestedList: List[NestedInteger]):
+    def __init__(self, nestedList: list[NestedInteger]):
         self.generator = self._get(nestedList)
         self.next_number = next(self.generator, None)
 
-    def _get(self, current_list: List[NestedInteger]) -> Generator[int, None, None]:
+    def _get(self, current_list: list[NestedInteger]) -> Generator[int, None, None]:
         for element in current_list:
             if element.isInteger():
                 yield element.getInteger()

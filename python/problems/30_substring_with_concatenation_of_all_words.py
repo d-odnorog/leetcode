@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 import collections
-from typing import List
 
 
 class Solution:
-    def findSubstring(self, s: str, words: List[str]) -> List[int]:
+    def findSubstring(self, s: str, words: list[str]) -> list[int]:
         n = len(s)
         k = len(words)
         word_length = len(words[0])

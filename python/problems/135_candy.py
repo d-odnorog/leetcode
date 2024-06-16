@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/candy/
-from typing import List
 
 
 class Solution:
-    def candy(self, ratings: List[int]) -> int:
+    def candy(self, ratings: list[int]) -> int:
         length = len(ratings)
         candies = [1] * length
         for i in range(1, length):

@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/minimum-number-of-refueling-stops/
 import heapq
-from typing import List
 
 
 class Solution:
     def minRefuelStops(
-        self, target: int, startFuel: int, stations: List[List[int]]
+        self, target: int, startFuel: int, stations: list[list[int]]
     ) -> int:
         stations.append([target, 0])  # regard target as a station
         fuel = startFuel

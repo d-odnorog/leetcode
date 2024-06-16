@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/binary-search/
-from typing import List
 
 
 class Solution:
-    def search(self, nums: List[int], target: int) -> int:
+    def search(self, nums: list[int], target: int) -> int:
         length = len(nums)
         if length == 1:
             return -1 if nums[0] != target else 0
@@ -27,7 +26,7 @@ class Solution:
 
 
 class Solution2:
-    def search(self, nums: List[int], target: int) -> int:
+    def search(self, nums: list[int], target: int) -> int:
         left, right = 0, len(nums) - 1
 
         while left <= right:

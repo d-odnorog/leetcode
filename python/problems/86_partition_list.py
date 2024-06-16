@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/partition-list/
-from typing import Optional
 
 
 class ListNode:
@@ -9,7 +8,7 @@ class ListNode:
 
 
 class Solution:
-    def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
+    def partition(self, head: ListNode | None, x: int) -> ListNode | None:
         h1 = l1 = ListNode(0)
         h2 = l2 = ListNode(0)
         while head:

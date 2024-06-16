@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/kth-largest-element-in-an-array/
-from typing import List
 
 
 class Solution:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
+    def findKthLargest(self, nums: list[int], k: int) -> int:
         nums.sort(reverse=True)
 
         n = nums[0]
@@ -18,7 +17,7 @@ class Solution:
 
 
 class Solution2:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
+    def findKthLargest(self, nums: list[int], k: int) -> int:
         return sorted(nums)[-k]
 
 

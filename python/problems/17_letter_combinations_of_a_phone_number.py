@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-from typing import List
 
 
 class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
+    def letterCombinations(self, digits: str) -> list[str]:
         DIGITS_TO_LETTERS = {
             '2': 'abc',
             '3': 'def',

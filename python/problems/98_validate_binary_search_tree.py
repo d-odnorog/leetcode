@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/validate-binary-search-tree/
-from typing import Optional
 
 
 class TreeNode:
@@ -10,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+    def isValidBST(self, root: TreeNode | None) -> bool:
         def valid_bst(root, min_val, max_val):
             if root is None:
                 return True

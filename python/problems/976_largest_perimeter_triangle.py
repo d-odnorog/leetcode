@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/largest-perimeter-triangle/
-from typing import List
 
 
 class Solution:
-    def largestPerimeter(self, nums: List[int]) -> int:
+    def largestPerimeter(self, nums: list[int]) -> int:
         l = len(nums)
         nums.sort(reverse=True)
 

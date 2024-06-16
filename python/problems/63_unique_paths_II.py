@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/unique-paths-ii/
 from functools import lru_cache
-from typing import List
 
 
 class Solution:
-    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+    def uniquePathsWithObstacles(self, obstacleGrid: list[list[int]]) -> int:
         m = len(obstacleGrid)
         n = len(obstacleGrid[0])
 
@@ -43,7 +42,7 @@ class Solution:
 
 
 class Solution2:
-    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+    def uniquePathsWithObstacles(self, obstacleGrid: list[list[int]]) -> int:
         m, n = len(obstacleGrid), len(obstacleGrid[0])
 
         if obstacleGrid[m - 1][n - 1] == 1:

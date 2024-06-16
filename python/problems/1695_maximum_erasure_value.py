@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/maximum-erasure-value/
-from typing import List
 
 
 class Solution:
-    def maximumUniqueSubarray(self, nums: List[int]) -> int:
+    def maximumUniqueSubarray(self, nums: list[int]) -> int:
         seen = set()  # track visited elements in the window
         res = i = tot = 0
         for j in range(len(nums)):

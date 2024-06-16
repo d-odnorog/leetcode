@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/n-queens/
-from typing import List
 
 
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solveNQueens(self, n: int) -> list[list[str]]:
         state = [["."] * n for _ in range(n)]  # start with empty board
         res = []
 

@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/permutations-ii/
 from itertools import permutations
-from typing import List
 
 
 class Solution:
-    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+    def permuteUnique(self, nums: list[int]) -> list[list[int]]:
         perm = permutations(nums)
         result = []
         for p in perm:
@@ -26,7 +25,7 @@ class Solution2:
                     result.append([element] + p)
         return result
 
-    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+    def permuteUnique(self, nums: list[int]) -> list[list[int]]:
         result = self.permutation(nums)
         return result
 

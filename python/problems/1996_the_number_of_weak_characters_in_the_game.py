@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/
-from typing import List
 
 
 class Solution:
@@ -7,7 +6,7 @@ class Solution:
     # 1. rearrange the order of attack and defense
     # 2. count weak characters (those defenses less than the current maximum defense)
     # 3. update the maximum defense
-    def numberOfWeakCharacters(self, p: List[List[int]]) -> int:
+    def numberOfWeakCharacters(self, p: list[list[int]]) -> int:
         # the final answer to be returned
         weakCharacters = 0
         # record maximum defense. since 1 <= defense_i <= 10 ^ 5

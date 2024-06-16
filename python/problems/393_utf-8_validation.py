@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/utf-8-validation/
-from typing import List
 
 
 class Solution:
-    def validUtf8(self, data: List[int]) -> bool:
+    def validUtf8(self, data: list[int]) -> bool:
         k = 0
         while k < len(data):
             # we are doing right shift like n>>5(n=1000 0000)

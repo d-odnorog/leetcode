@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/prefix-and-suffix-search/
-from typing import List
 
 
 class WordFilter:
-    def __init__(self, words: List[str]):
+    def __init__(self, words: list[str]):
         self.trie = {}
         self.weight_marker = '$'
         w = self.weight_marker

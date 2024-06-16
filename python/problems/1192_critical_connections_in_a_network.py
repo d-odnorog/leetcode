@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/critical-connections-in-a-network/
 from collections import defaultdict
-from typing import List
 
 
 class Solution:
     def criticalConnections(
-        self, n: int, connections: List[List[int]]
-    ) -> List[List[int]]:
+        self, n: int, connections: list[list[int]]
+    ) -> list[list[int]]:
         G = defaultdict(list)
         for v, w in connections:
             G[v].append(w)

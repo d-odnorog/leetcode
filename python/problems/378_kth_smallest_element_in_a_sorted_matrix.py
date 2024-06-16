@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
 from bisect import bisect
-from typing import List
 
 
 class Solution:
-    def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
+    def kthSmallest(self, matrix: list[list[int]], k: int) -> int:
         low = matrix[0][0]
         high = matrix[-1][-1]
 

@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/longest-common-prefix/
-from typing import List
 
 
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs: list[str]) -> str:
         if len(strs) == 1:
             return strs[0]
 
@@ -20,7 +19,7 @@ class Solution:
 
 
 class Solution2:
-    def _hasCommonPrefix(self, middle: int, strs: List[str]) -> bool:
+    def _hasCommonPrefix(self, middle: int, strs: list[str]) -> bool:
         prefix = strs[0][:middle]
         for word in strs:
             if not word.startswith(prefix):
@@ -28,7 +27,7 @@ class Solution2:
 
         return True
 
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs: list[str]) -> str:
         if len(strs) == 1:
             return strs[0]
 

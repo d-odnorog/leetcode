@@ -1,5 +1,4 @@
-# https://leetcode.com/problems/construct-string-from-binary-tree/description/
-from typing import Optional
+# https://leetcode.com/problems/construct-string-from-binary-tree/
 
 
 class TreeNode:
@@ -10,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def tree2str(self, root: Optional[TreeNode]) -> str:
+    def tree2str(self, root: TreeNode | None) -> str:
         if not root:
             return ''
 

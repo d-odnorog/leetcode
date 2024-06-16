@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
-from typing import Optional
 
 
 class TreeNode:
@@ -10,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def flatten(self, root: Optional[TreeNode]) -> None:
+    def flatten(self, root: TreeNode | None) -> None:
         """
         Do not return anything, modify root in-place instead.
         """

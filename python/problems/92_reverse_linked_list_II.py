@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/reverse-linked-list-ii/
-from typing import Optional
 
 
 class ListNode:
@@ -10,8 +9,8 @@ class ListNode:
 
 class Solution:
     def reverseBetween(
-        self, head: Optional[ListNode], left: int, right: int
-    ) -> Optional[ListNode]:
+        self, head: ListNode | None, left: int, right: int
+    ) -> ListNode | None:
         if left == right:
             return head
 

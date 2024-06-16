@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/count-of-smaller-numbers-after-self/
 from bisect import bisect_left
-from typing import List
 
 
 class Solution:  # Here's the plan:
@@ -18,7 +17,7 @@ class Solution:  # Here's the plan:
     #       num = 6 => binsearch: arr = [1,/\6],     i = 1 => ans = [2,1,1,_], del 6
     #       num = 1 => binsearch: arr = [/\1],       i = 0 => ans = [2,1,1,0], del 1
 
-    def countSmaller(self, nums: List[int]) -> List[int]:
+    def countSmaller(self, nums: list[int]) -> list[int]:
         arr, ans = sorted(nums), []  # <-- 1)
 
         for num in nums:

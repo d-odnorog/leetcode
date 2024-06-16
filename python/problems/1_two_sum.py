@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/two-sum/
-from typing import List
 
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         length = len(nums)
         for i in range(length):
             for j in range(i, length):
@@ -15,7 +14,7 @@ class Solution:
 
 
 class Solution2:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         seen = {}
         for i, value in enumerate(nums):
             remaining = target - nums[i]

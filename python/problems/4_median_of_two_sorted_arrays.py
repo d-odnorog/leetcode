@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/median-of-two-sorted-arrays/
-from typing import List
 
 
 class Solution:
-    def _find_i(self, a: List[int], b: List[int], i: int) -> int:
+    def _find_i(self, a: list[int], b: list[int], i: int) -> int:
         m = len(a)
         n = len(b)
 
@@ -31,7 +30,7 @@ class Solution:
             else:
                 return self._find_i(a[p:], b, i - p)
 
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
         # use find_i to solve the find median problem
         l1 = len(nums1)
         l2 = len(nums2)

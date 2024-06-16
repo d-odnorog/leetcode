@@ -1,9 +1,8 @@
 # https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-from typing import List
 
 
 class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+    def twoSum(self, numbers: list[int], target: int) -> list[int]:
         left, right = 0, len(numbers) - 1
         while right > left:
             s = numbers[left] + numbers[right]
@@ -16,7 +15,7 @@ class Solution:
 
 
 class Solution2:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+    def twoSum(self, numbers: list[int], target: int) -> list[int]:
         seen = {}  # {value: index}
         for i, n in enumerate(numbers):
             remaining = target - n
